@@ -442,6 +442,10 @@ a {
 
 @media (max-width: 768px) {
 
+    .categories {
+        padding: 10rem;
+    }
+
     .about-section {
         width: 95%;
         margin: auto;
