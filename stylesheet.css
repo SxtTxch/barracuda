@@ -442,8 +442,19 @@ a {
 
 @media (max-width: 768px) {
 
-    .categories {
-        padding: 10rem;
+    #terrarystyka {
+        width: 350px;
+        height: 175px;
+    }
+    
+    #akwarystyka {
+        width: 350px;
+        height: 175px;
+    }
+    
+    #nasze_zwierzeta {
+        width: 350px;
+        height: 175px;
     }
 
     .about-section {
