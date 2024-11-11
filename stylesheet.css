@@ -17,7 +17,7 @@
 }
 
 html, body {
-    background-image: url(media/background.jpg);
+    background: linear-gradient(135deg, #0d1117, #161b22, #21262d);
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--text-color);
@@ -503,4 +503,25 @@ a {
     .additional-info {
         width: 90%;
     }
+}
+/*Animacje scrollowania ladowania*/
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.scroll-animate {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards; /* Forward keeps it visible */
 }
