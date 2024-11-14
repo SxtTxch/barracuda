@@ -1,11 +1,11 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap);
 
 :root {
-    --background-color: #ffffff; /* Dark background */
-    --navbar-color: #1f1f1f; /* Darker navbar */
-    --highlight-color: #ff8c00; /* Vibrant orange highlight */
-    --text-color: #4b4b4b; /* Light text color */
-    --hover-color: #ffb84d; /* Soft orange hover effect */
+    --background-color: #ffffff; /* White background */
+    --navbar-color: #0077b6; /* Vibrant blue navbar */
+    --highlight-color: #00aaff; /* Deeper aqua blue highlight */
+    --text-color: #333333; /* Darker text for readability */
+    --hover-color: #0099cc; /* Slightly darker blue for hover */
     --high-contrast-text: #ffffff; /* White text for contrast */
 }
 
@@ -17,9 +17,9 @@
 }
 
 html, body {
-    background: linear-gradient(135deg, #0d1117, #161b22, #21262d);
-    background-size: cover;
+    background-image: url("./media/background.webp");
     background-repeat: no-repeat;
+    background-size: cover;
     color: var(--text-color);
     width: 100vw;
     height: 100vh;
@@ -60,14 +60,14 @@ html, body {
 }
 
 #icons i {
-    color: #ff6347; /* Change to your desired color */
+    color: var(--high-contrast-text); /* Change to your desired color */
     margin: 0 10px; /* Optional: add spacing between icons */
     font-size: 24px; /* Optional: adjust icon size */
     transition: color 0.3s ease; /* Optional: smooth transition on hover */
 }
 
 #icons i:hover {
-    color: #eeeeee; /* Color change on hover */
+    color: #000000; /* Color change on hover */
 }
 
 
@@ -105,7 +105,7 @@ html, body {
 
 h1 {
     font-size: 2.5rem;
-    color: var(--high-contrast-text);
+    color: var(--text-color);
     text-align: center;
 }
 
@@ -118,7 +118,7 @@ h2 {
 body p {
     font-size: 1.2rem;
     margin-top: 1rem;
-    color: var(--high-contrast-text);
+    color: var(--text-color);
     text-align: center;
 }
 

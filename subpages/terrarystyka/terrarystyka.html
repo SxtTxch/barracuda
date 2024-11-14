@@ -4,55 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terrarystyka</title>
-    <link rel="stylesheet" href="stylesheet.css"> <!-- Link to your main CSS file -->
+    <link rel="stylesheet" href="../../stylesheet.css"> <!-- Link to your main CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
-    <!-- Navigation Bar -->
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="navbar-brand">Home</a>
-            <ul class="nav-links">
-                <li><a href="terrarystyka.html">Terrarystyka</a></li>
-                <li><a href="other_page.html">Another Page</a></li>
-                <!-- Add other navigation items as needed -->
-            </ul>
-        </nav>
+    <header class="navbar">
+        <div id="icons">
+            <i class="fas fa-certificate" title="Certyfikat"></i>
+            <i class="fas fa-award" title="Nagroda"></i>
+            <i class="fas fa-star" title="Wysoka jakość"></i>
+        </div>
+        <div id="menu">
+            <a href="../../index.html"><div class="navbar-item"><i class="fas fa-home"></i> Strona Główna</div></a>
+            <div class="navbar-item" data-page="O Nas"><i class="fas fa-info-circle"></i> O Nas</div>
+            <div class="navbar-item" data-page="Aktualności"><i class="fas fa-newspaper"></i> Aktualności</div>
+            <div class="navbar-item" data-page="Porady"><i class="fas fa-lightbulb"></i> Nasze Porady</div>
+            <div class="navbar-item" data-page="Realizacje"><i class="fas fa-paw"></i> Nasze Realizacje</div>
+            <div class="navbar-item" data-page="Kontakt" id="kontakt"><i class="fas fa-envelope"></i> Kontakt</div>
+        </div>
     </header>
 
-    <!-- Subsite Content -->
-    <main class="subsite-main">
-        <section class="intro-section">
-            <h1>Terrarystyka</h1>
-            <p>Discover the world of terrarium setups, including tips on plants, ecosystems, and designs.</p>
-        </section>
+    <h1>Terrarystyka <i class="fas fa-paw"></i></h1>
+    <p><i class="fas fa-fish"></i> Terrarystyka blah blah blah</p>
 
-        <!-- Cards Section -->
-        <section class="cards-section">
+    <section class="additional-info scroll-animate">
+        <h2><i class="fas fa-info-circle"></i> O Nas</h2>
+        <div id="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat in veniam non placeat odit debitis ipsum doloremque ratione, tenetur hic amet itaque velit laborum accusantium necessitatibus perspiciatis nemo nostrum voluptatum.
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut repellendus qui earum esse obcaecati, repudiandae iste consectetur sunt, dolore voluptatem aliquam alias ab, illo laborum soluta? Aut amet maxime sunt.
+            <br>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus quae, optio eveniet pariatur incidunt consequatur repellendus! Saepe voluptatibus est minus minima, iusto sed error quis tempore facilis, totam labore impedit!
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quia deleniti quasi ut culpa iusto nesciunt, eius dolorem ex assumenda natus commodi, saepe consectetur molestias animi ad quam laboriosam et?
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa maiores, accusamus similique qui mollitia sunt temporibus odio assumenda fuga natus sequi neque autem nemo totam inventore doloremque expedita ab harum.
+        </div>
+    </section>
+
+    <section class="categories scroll-animate">
+        <a href="./terrarystyka.html">
             <div class="card">
-                <h2>Plant Selection</h2>
-                <p>Learn how to choose the best plants for your terrarium, suited to different environments.</p>
-                <button class="cta-button">Learn More</button>
+                <div class="categories-image" id="terrarystyka">
+                    <i class="fas fa-spider"></i>
+                </div>
+                <div class="container">
+                  <h4><b><i class="fas fa-cogs"></i> Terrarystyka</b></h4>
+                  <p>blablabla</p>
+                </div>
             </div>
-
+        </a>
+        <a href="../akwarystyka/akwarystyka.html">
             <div class="card">
-                <h2>Terrarium Care</h2>
-                <p>Explore essential care techniques for maintaining your terrarium and keeping it thriving.</p>
-                <button class="cta-button">Learn More</button>
-            </div>
-
+                <div class="categories-image" id="akwarystyka">
+                    <i class="fas fa-fish"></i>
+                </div>
+                <div class="container">
+                  <h4><b><i class="fas fa-water"></i> Akwarystyka</b></h4>
+                  <p>blablabla</p>
+                </div>
+              </div>
+        </a>
+        <a href="../nasze_zwierzeta/nasze_zwierzeta.html">
             <div class="card">
-                <h2>Design Inspiration</h2>
-                <p>Get inspired by different terrarium setups, from minimalistic to lush jungle styles.</p>
-                <button class="cta-button">Learn More</button>
+                <div class="categories-image" id="nasze_zwierzeta">
+                    <i class="fas fa-paw"></i>
+                </div>
+                <div class="container">
+                    <h4><b><i class="fas fa-dog"></i> Nasze zwierzęta</b></h4>
+                    <p>blablabla</p>
+                </div>
             </div>
-        </section>
-    </main>
+        </a>
+    </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Your Website. All Rights Reserved.</p>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Sklep Zoologiczny Barracuda. Wszelkie prawa zastrzeżone.</p>
+            <p><a href="privacy-policy.html"><i class="fas fa-shield-alt"></i> Polityka Prywatności</a> | <a href="terms-of-service.html"><i class="fas fa-file-contract"></i> Warunki Usługi</a></p>
+        </div>
     </footer>
 
+    <script src="../scroll.js"></script>
 </body>
 </html>
