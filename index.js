@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const contentMap = {
         // Każdy guzik, zmienia te divy w htmlu.
         "O Nas": {
-            header_text_one: "Kim Jesteśmy",
-            header_text_two: "Jak Działamy", // Text 
+            header_text_one: "Kim Jesteśmy", // Naglowek pierwszy w sekcji o naszym sklepie
+            header_text_two: "Jak Działamy", // Naglowek drugi w sekcji o naszym sklepie
             text_one: "Jesteśmy zespołem pasjonatów, którzy z zaangażowaniem dostarczają najlepszy wybór zwierząt egzotycznych i akwariowych.", // Text pierwszy w sekcji o naszym sklepie
             text_two: "Skupiamy się na etycznym pozyskiwaniu i odpowiedzialnej opiece nad naszymi zwierzętami.", // Text drugi w sekcji o naszym sklepie
             additional_text: "Nasz sklep zoologiczny Barracuda oferuje szeroki wybór produktów i usług, które spełniają potrzeby zarówno amatorów, jak i profesjonalnych hodowców.", // Tekst na samym dole.
